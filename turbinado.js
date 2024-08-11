@@ -1,5 +1,5 @@
 
-      function calcular() {
+      function calcularTurbinado() {
         let oferta = document.getElementById("inputNumber").value;
         const taxaEnjoei = 18;
         let tarifaFixa;
@@ -27,6 +27,8 @@
         // valor da oferta - taxas total
         let taxas = ((oferta * taxaEnjoei) / 100 + tarifaFixa);
         let total = oferta - taxas;
+        const turbinado = "Modo Turbinado: "
+        const classico = "Modo Clássico: "
         
         // exibir na tela do usuario
         let exibirTela = document.getElementById('total');
